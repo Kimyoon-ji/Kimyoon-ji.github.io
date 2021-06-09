@@ -4,74 +4,179 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
 <style>
-body,h1 {font-family: "Raleway", Arial, sans-serif}
-h1 {letter-spacing: 6px}
-.w3-row-padding img {margin-bottom: 12px}
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/w3images/pizza.jpg");
+  min-height: 90%;
+}
 </style>
 <body>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-
-<!-- Header -->
-<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-  <h1 class="w3-xlarge">20202525</h1>
-  <h1>Kim yoon-ji</h1>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">HOMEWORK</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+  </div>
+</div>
   
-  <div class="w3-padding-32">
-    <div class="w3-bar w3-border">
-      <a href="#" class="w3-bar-item w3-button">Home</a>
-      <a href="#" class="w3-bar-item w3-button w3-light-grey">Portfolio</a>
-      <a href="#" class="w3-bar-item w3-button">Contact</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small">Weddings</a>
-    </div>
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">20202525<br>KIM YOON-JI</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the homework</a></p>
   </div>
 </header>
 
-<!-- Photo Grid -->
-<div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
-  <div class="w3-half">
-    <img src="11561.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-  </div>
-
-  <div class="w3-half">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-  </div>
-     <ul>
-      <li><a href="./homework2-1.html">homework1</a></li>
-      <li><a href="./homework2-2.html">homework2</a></li>
-      <li><a href="./homework2-3.html">homework3</a></li>
-      <li><a href="./homework2-4.html">homework4</a></li>
-   </ul>
-</div>
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
   
-<!-- End Page Content -->
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">HOMEWORK</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">HOMEWORK 2</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">HOMEWORK 3</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">HOMEWORK 4</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>HOMEWORK 2-1</b><span class="w3-right w3-tag w3-white w3-round"><ul>
+    <a href="./homework2-1.html">homework 2-1</a>
+       </ul></span></h1>
+      <p class="w3-text-grey">This is a Heading</p>
+      <hr>
+   
+      <h1><b>HOMEWORK 2-2</b> <span class="w3-right w3-tag w3-white w3-round"><ul>
+    <a href="./homework2-2.html">homework 2-2</a>
+       </ul></span></h1>
+      <p class="w3-tex-t-grey">HTML Tables</p>
+      <hr>
+      
+      <h1><b>HOMEWORK 2-3</b> <span class="w3-right w3-tag w3-white w3-round"><ul>
+    <a href="./homework2-3.html">homework 2-3</a>
+       </ul></span></h1>
+      <p class="w3-text-grey">HTML Layout Elements and Techniques</p>
+      <hr>
+
+      <h1><b>HOMEWORK 2-4</b> <span class="w3-right w3-tag w3-white w3-round">
+       <ul>
+    <a href="./homework2-4.html">homework 2-4</a>
+       </ul></span></h1>
+      <p class="w3-text-grey">HTML Responsive Web Design</p>
+      <hr>
+      </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>HOMEWORK 3</b>  <span class="w3-right w3-tag w3-white w3-round"><a href="https://kimyoon-ji.github.io/" target="_blank">HOMEWORK 3</a></span></h1>
+      <p class="w3-text-grey">make your home page with css template</p>
+      <hr>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>HOMEWORK 4-1</b> <span class="w3-right w3-tag w3-white w3-round">
+       <ul>
+    <a href="./homework4-1.html">homework 4-1</a>
+       </ul></span></h1>
+      <p class="w3-text-grey">Sum, Factorial</p>
+      <hr>
+   
+      <h1><b>HOMEWORK 4-2</b> <span class="w3-right w3-tag w3-white w3-round">
+       <ul>
+    <a href="./homework4-2.html">homework 4-2</a>
+       </ul></span></h1>
+      <p class="w3-text-grey">Sorting</p>
+      <hr>
+      
+      <h1><b>HOMEWORK 4-3</b> <span class="w3-right w3-tag w3-white w3-round">
+       <ul>
+    <a href="./homework4-3.html">homework 4-3</a>
+       </ul></span></h1>
+      <p class="w3-text-grey">Fibonacci</p>
+      <hr>
+      
+      <h1><b>HOMEWORK 4-4</b> <span class="w3-right w3-tag w3-white w3-round">
+       <ul>
+    <a href="./homework4-4.html">homework 4-4</a>
+       </ul></span></h1>
+      <p class="w3-text-grey">width*height/2, width*height, pi*radius^2 ...</p>
+      <hr>
+      
+      <h1><b>HOMEWORK 4-5</b> <span class="w3-right w3-tag w3-white w3-round">
+       <ul>
+    <a href="./homework4-5.html">homework 4-5</a>
+       </ul></span></h1>
+      <p class="w3-text-grey">Calendar</p>
+      
+      
+    </div><br>
+
+  </div>
 </div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Web Programming</p>
+    <p>NAME : KIM YOON-JI</p>
+    <p>STUDENTNUMBER : 20202525<img src="/w3images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>computer science</p>
+    <img src="/w3images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+        <p>FORM : BUSAN</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
 
 </body>
 </html>
+
